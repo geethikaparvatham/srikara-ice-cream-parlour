@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #005BFF;
+  --color-secondary: #0B2E59;
+  --color-accent: #FF7A00;
+  --color-brand-yellow: #FFD447;
+  --color-cream: #FFF8EC;
+  --color-footer-green: #184F2D;
+  --color-white: #FFFFFF;
+}
+
+:root {
+  --font-sans: 'Outfit', sans-serif;
+  --font-display: 'Fredoka', sans-serif;
+  --background: #FFF8EC;
+  --foreground: #0B2E59;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), 'Fredoka', sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(11, 46, 89, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode Global Overrides */
+.dark body, 
+.dark .bg-\[\#FFF8EC\] {
+  background-color: #0B1120 !important;
+  color: #F8FAFC !important;
+}
+
+.dark .text-\[\#0B2E59\] {
+  color: #E2E8F0 !important;
+}
+
+.dark .text-\[\#0B2E59\]\/95,
+.dark .text-\[\#0B2E59\]\/90,
+.dark .text-\[\#0B2E59\]\/85,
+.dark .text-\[\#0B2E59\]\/80,
+.dark .text-\[\#0B2E59\]\/75,
+.dark .text-\[\#0B2E59\]\/70,
+.dark .text-\[\#0B2E59\]\/65,
+.dark .text-\[\#0B2E59\]\/60,
+.dark .text-\[\#0B2E59\]\/50 {
+  color: rgba(226, 232, 240, 0.8) !important;
+}
+
+/* Icon & Tag Color Overrides for Dark Mode */
+.dark .text-\[\#184F2D\] {
+  color: #4ADE80 !important;
+}
+.dark .bg-\[\#184F2D\]\/10 {
+  background-color: rgba(74, 222, 128, 0.1) !important;
+}
+.dark .border-\[\#184F2D\]\/20 {
+  border-color: rgba(74, 222, 128, 0.2) !important;
+}
+
+.dark .text-\[\#005BFF\] {
+  color: #60A5FA !important;
+}
+.dark .bg-\[\#005BFF\]\/10 {
+  background-color: rgba(96, 165, 250, 0.1) !important;
+}
+.dark .border-\[\#005BFF\]\/20 {
+  border-color: rgba(96, 165, 250, 0.2) !important;
+}
+
+.dark .bg-\[\#0B2E59\]\/10 {
+  background-color: rgba(226, 232, 240, 0.1) !important;
+}
+.dark .border-\[\#0B2E59\]\/20 {
+  border-color: rgba(226, 232, 240, 0.2) !important;
+}
+
+.dark .glass,
+.dark .bg-white\/70,
+.dark .bg-white\/55,
+.dark .bg-white\/50,
+.dark .bg-white\/80 {
+  background-color: rgba(30, 41, 59, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #F8FAFC !important;
+}
+
+.dark .bg-white {
+  background-color: #1E293B !important;
+}
+
+.dark .from-white {
+  --tw-gradient-from: #0B1120 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(11, 17, 32, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.dark .to-\[\#FFF8EC\] {
+  --tw-gradient-to: #0B1120 var(--tw-gradient-to-position) !important;
+}
+
+.dark .from-\[\#FFF8EC\] {
+  --tw-gradient-from: #0B1120 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(11, 17, 32, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.dark .to-white {
+  --tw-gradient-to: #0B1120 var(--tw-gradient-to-position) !important;
+}
+
+.dark .bg-\[\#FFF8EC\]\/95,
+.dark .bg-\[\#FFF8EC\]\/90 {
+  background-color: rgba(11, 17, 32, 0.95) !important;
+}
+
+.dark .border-\[\#0B2E59\]\/10,
+.dark .border-\[\#0B2E59\]\/20 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark input {
+  color: #E2E8F0 !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #005BFF;
+  border-radius: 9999px;
+  border: 2px solid #FFF8EC;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B2E59;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
