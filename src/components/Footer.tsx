@@ -14,7 +14,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#0B2E59] text-white pt-16 pb-8 border-t-8 border-[#FFD447] relative overflow-hidden">
+    <footer className="bg-#0B2E59 text-white pt-16 pb-8 border-t-8 border-#FFD447 relative overflow-hidden">
       {/* Decorative details */}
       <div className="absolute top-[-50px] right-[-50px] w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
       <div className="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
