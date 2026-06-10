@@ -68,8 +68,8 @@ export default function FAQ() {
                   className="w-full flex items-center justify-between p-5 text-left hover:text-[#005BFF] dark:hover:text-[#FFD447] transition-colors focus:outline-none"
                 >
                   <div className="flex items-center space-x-3 pr-4">
-                    <HelpCircle size={18} className="text-[#005BFF]/80 dark:text-[#FFD447] flex-shrink-0" />
-                    <span className="font-bold text-sm sm:text-base leading-snug text-[#0B2E59] dark:text-white">{faq.q}</span>
+                    <HelpCircle size={18} className="text-[#005BFF]/80 dark:!text-[#FFD447] flex-shrink-0" />
+                    <span className="font-bold text-sm sm:text-base leading-snug text-[#0B2E59] dark:!text-[#0B2E59]">{faq.q}</span>
                   </div>
                   <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
@@ -89,7 +89,7 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#0B2E59] dark:text-white/90 font-medium leading-relaxed border-t border-[#0B2E59]/5 dark:border-white/10">
+                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#0B2E59] dark:!text-[#0B2E59] font-medium leading-relaxed border-t border-[#0B2E59]/5 dark:border-[#0B2E59]/20">
                         {faq.a}
                       </div>
                     </motion.div>
