@@ -19,14 +19,14 @@ const SLIDES = [
     title: "Every Scoop Tells A Story",
     subtitle: "Fresh • Creamy • Delicious",
     ctaText: "Discover Our Story",
-    ctaLink: "/#story",
+    ctaLink: "/our-story",
   },
   {
     image: "/images/family_parlour.png",
     title: "A Perfect Place For Family & Friends",
     subtitle: "Indulge in sweet memories together",
     ctaText: "Visit Us Today",
-    ctaLink: "/#contact",
+    ctaLink: "/flavours",
   },
 ];
 

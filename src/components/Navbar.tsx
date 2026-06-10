@@ -146,8 +146,8 @@ export default function Navbar() {
             </button>
 
             <Link
-              href="/#contact"
-              onClick={(e) => handleScrollTo(e as unknown as React.MouseEvent<HTMLAnchorElement>, "/#contact")}
+              href="/flavours"
+              onClick={(e) => handleScrollTo(e as unknown as React.MouseEvent<HTMLAnchorElement>, "/flavours")}
               className="flex items-center space-x-2 bg-[#FF7A00] hover:bg-[#FF7A00]/90 text-white px-5 py-2 rounded-full font-bold text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
               <MapPin size={16} />
@@ -215,8 +215,8 @@ export default function Navbar() {
                     </form>
                     
                     <Link
-                      href="/#contact"
-                      onClick={(e) => handleScrollTo(e as unknown as React.MouseEvent<HTMLAnchorElement>, "/#contact")}
+                      href="/flavours"
+                      onClick={(e) => handleScrollTo(e as unknown as React.MouseEvent<HTMLAnchorElement>, "/flavours")}
                       className="flex items-center justify-center space-x-2 bg-[#FF7A00] text-white py-3.5 rounded-xl font-bold shadow-md hover:bg-[#FF7A00]/95 hover:-translate-y-0.5 transition-all text-lg"
                     >
                       <MapPin size={20} />
