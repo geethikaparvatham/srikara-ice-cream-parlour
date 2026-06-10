@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { Play, Sparkles } from "lucide-react";
-import { motion } from "framer-motion";
+import { Play, Sparkles, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function VideoSection() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   return (
     <section className="relative w-full h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-black select-none">
       {/* Background Parallax Image */}
@@ -40,6 +42,7 @@ export default function VideoSection() {
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 100 }}
           className="relative mb-6 cursor-pointer group"
+          onClick={() => setIsVideoOpen(true)}
         >
           {/* Pulsing rings */}
           <div className="absolute inset-0 rounded-full bg-white/20 scale-125 animate-ping" />
@@ -71,6 +74,43 @@ export default function VideoSection() {
           At Srikara, we believe every scoop is an invitation to connect. We are not just serving Hyderabad's finest Masqati treats; we are providing a warm, cheerful spot for families to share laughter, friends to catch up, and sweet memories to grow.
         </motion.p>
       </div>
+
+      {/* Video Modal */}
+      <AnimatePresence>
+        {isVideoOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4"
+          >
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute top-6 right-6 text-white hover:text-[#FFD447] transition-colors focus:outline-none z-50 p-2"
+              aria-label="Close video"
+            >
+              <X size={36} />
+            </button>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10"
+            >
+              <video
+                className="w-full h-full object-cover"
+                src="/videos/parlour-view.mp4"
+                controls
+                autoPlay
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support the video tag. Please update your browser.
+              </video>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

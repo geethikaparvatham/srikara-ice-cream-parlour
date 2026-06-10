@@ -8,29 +8,48 @@ interface CounterProps {
   value: number;
   suffix?: string;
   duration?: number;
+  live?: boolean;
 }
 
-function Counter({ value, suffix = "", duration = 1.5 }: CounterProps) {
+function Counter({ value, suffix = "", duration = 1.5, live = false }: CounterProps) {
   const [count, setCount] = useState(0);
   const elementRef = useRef(null);
   const isInView = useInView(elementRef, { once: true, margin: "-50px" });
+  const [hasFinishedInitial, setHasFinishedInitial] = useState(false);
 
+  // Initial count-up animation
   useEffect(() => {
     if (!isInView) return;
 
     let startTimestamp: number | null = null;
+    let animationFrame: number;
     const step = (timestamp: number) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / (duration * 1000), 1);
       setCount(Math.floor(progress * value));
       if (progress < 1) {
-        window.requestAnimationFrame(step);
+        animationFrame = window.requestAnimationFrame(step);
       } else {
         setCount(value);
+        setHasFinishedInitial(true);
       }
     };
-    window.requestAnimationFrame(step);
+    animationFrame = window.requestAnimationFrame(step);
+    return () => window.cancelAnimationFrame(animationFrame);
   }, [isInView, value, duration]);
+
+  // Real-time live simulation
+  useEffect(() => {
+    if (live && hasFinishedInitial) {
+      const interval = setInterval(() => {
+        // Randomly increment by 1 or 2 every few seconds to simulate live activity
+        if (Math.random() > 0.4) {
+          setCount(prev => prev + Math.floor(Math.random() * 2) + 1);
+        }
+      }, 2500);
+      return () => clearInterval(interval);
+    }
+  }, [live, hasFinishedInitial]);
 
   return (
     <span ref={elementRef} className="tabular-nums">
@@ -47,6 +66,7 @@ const STATS = [
     suffix: "+",
     label: "Happy Customers",
     desc: "Delighted families served",
+    live: true,
   },
   {
     icon: IceCream,
@@ -54,6 +74,7 @@ const STATS = [
     suffix: "+",
     label: "Ice Cream Varieties",
     desc: "Scoops, cones, and kulfis",
+    live: false,
   },
   {
     icon: ShieldCheck,
@@ -61,6 +82,7 @@ const STATS = [
     suffix: "%",
     label: "Quality Assurance",
     desc: "Pure ingredients sourced",
+    live: false,
   },
   {
     icon: Star,
@@ -68,6 +90,7 @@ const STATS = [
     suffix: " Star",
     label: "Customer Rating",
     desc: "Top-rated local parlour",
+    live: false,
   },
   {
     icon: Heart,
@@ -75,6 +98,7 @@ const STATS = [
     suffix: "+",
     label: "Moments Shared",
     desc: "Memories made at store",
+    live: true,
   },
 ];
 
@@ -107,7 +131,7 @@ export default function Stats() {
 
                 {/* Animated counter */}
                 <h3 className="text-3xl sm:text-5xl font-display font-extrabold text-[#FFD447] tracking-tight">
-                  <Counter value={stat.value} suffix={stat.suffix} />
+                  <Counter value={stat.value} suffix={stat.suffix} live={stat.live} />
                 </h3>
 
                 {/* Label & Description */}

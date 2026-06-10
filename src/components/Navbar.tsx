@@ -88,7 +88,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className={`font-extrabold text-base sm:text-xl font-display tracking-tight leading-tight transition-colors ${shouldBeSolid ? 'text-[#0B2E59]' : 'text-[#0B2E59] md:text-white'}`}>
+              <span className={`font-extrabold text-base sm:text-xl font-display tracking-tight leading-tight transition-colors ${shouldBeSolid ? 'text-[#0B2E59]' : 'text-white'}`}>
                 SRIKARA
               </span>
               <span className="text-[10px] sm:text-xs text-[#FF7A00] font-semibold leading-none tracking-wider -mt-0.5 drop-shadow-sm">
