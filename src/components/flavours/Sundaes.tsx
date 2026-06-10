@@ -530,7 +530,7 @@ export default function Sundaes() {
                     </p>
                   </div>
 
-                  <div className={"h-1.5 w-full bg-linear-to-r " + flavor.color} />
+                  <div className={"h-1.5 w-full bg-gradient-to-r " + flavor.color} />
                 </motion.div>
               ))}
             </div>

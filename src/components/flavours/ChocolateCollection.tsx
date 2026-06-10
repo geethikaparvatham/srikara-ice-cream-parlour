@@ -87,7 +87,7 @@ const CHOCOLATE_CATEGORIES = [
 
 export default function ChocolateCollection() {
   return (
-    <section className="py-20 bg-#FFF8EC relative overflow-hidden">
+    <section className="py-20 bg-[#FFF8EC] relative overflow-hidden">
       <div className="absolute top-40 left-10 w-24 h-24 bg-[#78350F]/20 rounded-full blur-xl animate-float-slow" />
       <div className="absolute bottom-40 right-10 w-32 h-32 bg-[#27272A]/20 rounded-full blur-xl animate-float-fast" />
 
@@ -123,7 +123,7 @@ export default function ChocolateCollection() {
                   whileHover={{ y: -8, transition: { duration: 0.2 } }}
                   className="relative rounded-2xl overflow-hidden glass shadow-md border border-[#451A03]/10 bg-white/70 group flex flex-col h-full"
                 >
-                  <div className="relative w-full h-180px overflow-hidden bg-[#451A03]/5">
+                  <div className="relative w-full h-[180px] overflow-hidden bg-[#451A03]/5">
                     <Image
                       src={flavor.image}
                       alt={flavor.name}
@@ -151,7 +151,7 @@ export default function ChocolateCollection() {
                     </p>
                   </div>
 
-                  <div className={"h-1.5 w-full bg-linear-to-r " + flavor.color} />
+                  <div className={"h-1.5 w-full bg-gradient-to-r " + flavor.color} />
                 </motion.div>
               ))}
             </div>
