@@ -4,10 +4,6 @@ import Cones from "@/components/flavours/Cones";
 import Sundaes from "@/components/flavours/Sundaes";
 import Kulfi from "@/components/flavours/Kulfi";
 import ChocolateCollection from "@/components/flavours/ChocolateCollection";
-import FruitSalads from "@/components/flavours/FruitSalads";
-import Smoothies from "@/components/flavours/Smoothies";
-import Milkshakes from "@/components/flavours/Milkshakes";
-import Cassata from "@/components/flavours/Cassata";
 
 export async function generateMetadata({ params }: { params: Promise<{ category: string }> }) {
   const resolvedParams = await params;
@@ -37,10 +33,6 @@ export default async function CategoryFlavoursPage({
       case "sundaes": return <Sundaes />;
       case "kulfi": return <Kulfi />;
       case "chocolate-collection": return <ChocolateCollection />;
-      case "fruit-salads": return <FruitSalads />;
-      case "smoothies": return <Smoothies />;
-      case "milkshakes": return <Milkshakes />;
-      case "cassata": return <Cassata />;
       default: return <div className="text-center py-20 text-2xl font-bold text-[#0B2E59]">Category not found</div>;
     }
   };

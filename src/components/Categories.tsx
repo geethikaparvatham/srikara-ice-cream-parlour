@@ -99,10 +99,10 @@ export default function Categories() {
                 {/* Card Content */}
                 <div className={`w-full pl-20 md:pl-0 md:w-[45%] flex ${isEven ? 'md:justify-end' : 'md:justify-start'}`}>
                   <Link href={`/flavours/${slug}`} className="block w-full max-w-sm group">
-                    <div className="rounded-3xl overflow-hidden glass bg-white shadow-xl hover:shadow-2xl border border-#0B2E59/10 transition-all duration-500 hover:-translate-y-2">
+                    <div className="rounded-3xl overflow-hidden glass bg-white shadow-xl hover:shadow-2xl border border-[#0B2E59]/10 transition-all duration-500 hover:-translate-y-2">
                       
                       {/* Image */}
-                      <div className="relative w-full h-220px overflow-hidden">
+                      <div className="relative w-full h-[220px] overflow-hidden">
                         <Image
                           src={category.image}
                           alt={category.title}
@@ -110,19 +110,19 @@ export default function Categories() {
                           sizes="(max-width: 768px) 100vw, 400px"
                           className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                         />
-                        <div className="absolute inset-0 bg-linear-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         
-                        <div className="absolute bottom-4 right-4 p-2.5 rounded-full bg-white/90 backdrop-blur-md text-#005BFF shadow-lg group-hover:bg-#FF7A00 group-hover:text-white transition-colors duration-300">
+                        <div className="absolute bottom-4 right-4 p-2.5 rounded-full bg-white/90 backdrop-blur-md text-[#005BFF] shadow-lg group-hover:bg-[#FF7A00] group-hover:text-white transition-colors duration-300">
                           <Sparkles size={16} />
                         </div>
                       </div>
 
                       {/* Text Details */}
                       <div className={`p-8 ${isEven ? 'md:text-right' : 'md:text-left'} text-left`}>
-                        <h3 className="text-2xl font-bold text-#0B2E59 mb-3 font-display group-hover:text-#005BFF transition-colors">
+                        <h3 className="text-2xl font-bold text-[#0B2E59] mb-3 font-display group-hover:text-[#005BFF] transition-colors">
                           {category.title}
                         </h3>
-                        <p className="text-sm text-#0B2E59/70 leading-relaxed font-medium">
+                        <p className="text-sm text-[#0B2E59]/70 leading-relaxed font-medium">
                           {category.description}
                         </p>
                       </div>
