@@ -1,0 +1,44 @@
+"use client";
+
+import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Home, Info, Grid, Image as ImageIcon, Phone } from "lucide-react";
+
+const NAV_ITEMS = [
+  { name: "Home", href: "/", icon: Home },
+  { name: "About Us", href: "/about-us", icon: Info },
+  { name: "Flavours", href: "/flavours", icon: Grid },
+  { name: "Gallery", href: "/gallery", icon: ImageIcon },
+  { name: "Contact", href: "/contact", icon: Phone },
+];
+
+export default function MobileBottomNav() {
+  const pathname = usePathname();
+
+  return (
+    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-[#0B2E59]/10 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] pb-safe">
+      <nav className="flex justify-around items-center h-16">
+        {NAV_ITEMS.map((item) => {
+          const Icon = item.icon;
+          const isActive = pathname === item.href;
+
+          return (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`flex flex-col items-center justify-center w-full h-full space-y-1 transition-colors ${
+                isActive ? "text-[#FF7A00]" : "text-[#0B2E59]/60 hover:text-[#0B2E59]"
+              }`}
+            >
+              <Icon size={20} className={isActive ? "fill-current" : ""} />
+              <span className="text-[10px] font-bold tracking-wide">
+                {item.name}
+              </span>
+            </Link>
+          );
+        })}
+      </nav>
+    </div>
+  );
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import MobileBottomNav from "@/components/MobileBottomNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -78,13 +79,14 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col bg-[#FFF8EC] text-[#0B2E59]">
+      <body className="min-h-full flex flex-col bg-[#FFF8EC] text-[#0B2E59] pb-[64px] md:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Navbar />
         {children}
+        <MobileBottomNav />
       </body>
     </html>
   );
