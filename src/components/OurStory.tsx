@@ -72,7 +72,7 @@ export default function OurStory() {
                 )}
 
                 {/* Card */}
-                <div className="h-full flex flex-col items-center text-center p-8 sm:p-10 rounded-3xl bg-white/70 glass border border-[#0B2E59]/10 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative z-10 overflow-hidden">
+                <div className="h-full flex flex-col items-center text-center p-8 sm:p-10 rounded-3xl bg-white/ dark:bg-[#0A2540]/ glass border border-[#0B2E59]/10 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative z-10 overflow-hidden">
                   
                   {/* Top Gradient Bar */}
                   <div className={`absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r ${item.gradient} opacity-80 group-hover:opacity-100 transition-opacity duration-300`} />

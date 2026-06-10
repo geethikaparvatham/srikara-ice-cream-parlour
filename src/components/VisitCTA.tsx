@@ -68,7 +68,7 @@ export default function VisitCTA() {
         >
           <a
             href="tel:9030303222"
-            className="flex items-center justify-center space-x-2 bg-white dark:bg-[#0A2540] text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-white/95 px-8 py-4 rounded-full font-extrabold text-base w-full sm:w-60 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            className="flex items-center justify-center space-x-2 bg-white dark:bg-[#0A2540] text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-white/ dark:bg-[#0A2540]/ px-8 py-4 rounded-full font-extrabold text-base w-full sm:w-60 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
           >
             <Phone size={18} fill="#0B2E59" />
             <span>Call 9030303222</span>

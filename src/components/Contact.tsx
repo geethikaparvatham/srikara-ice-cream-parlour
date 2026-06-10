@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-linear-to-b from-white to-#FFF8EC relative">
+    <section id="contact" className="py-20 bg-linear-to-b from-white dark:from-[#0A2540] to-[#FFF8EC] dark:to-[#041224] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -50,7 +50,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-between glass p-8 sm:p-10 rounded-3xl border border-[#0B2E59]/10 bg-white/70 shadow-lg text-left"
+            className="flex flex-col justify-between glass p-8 sm:p-10 rounded-3xl border border-[#0B2E59]/10 bg-white/ dark:bg-[#0A2540]/ shadow-lg text-left"
           >
             <div className="space-y-8">
               <div>

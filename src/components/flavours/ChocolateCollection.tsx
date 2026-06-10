@@ -121,7 +121,7 @@ export default function ChocolateCollection() {
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                  className="relative rounded-2xl overflow-hidden glass shadow-md border border-[#451A03]/10 bg-white/70 group flex flex-col h-full"
+                  className="relative rounded-2xl overflow-hidden glass shadow-md border border-[#451A03]/10 bg-white/ dark:bg-[#0A2540]/ group flex flex-col h-full"
                 >
                   <div className="relative w-full h-[180px] overflow-hidden bg-[#451A03]/5">
                     <Image
@@ -132,12 +132,12 @@ export default function ChocolateCollection() {
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     
-                    <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold text-[#451A03] border border-brand-yellow shadow-sm flex items-center space-x-1">
+                    <div className="absolute top-3 left-3 bg-white/ dark:bg-[#0A2540]/ backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold text-[#451A03] border border-brand-yellow shadow-sm flex items-center space-x-1">
                       <Snowflake size={10} className="text-[#78350F] animate-spin-slow" />
                       <span>{flavor.badge}</span>
                     </div>
 
-                    <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/80 backdrop-blur-md text-#FF7A00 hover:bg-white dark:bg-[#0A2540] transition-colors duration-200 shadow-sm cursor-pointer">
+                    <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/ dark:bg-[#0A2540]/ backdrop-blur-md text-#FF7A00 hover:bg-white dark:bg-[#0A2540] transition-colors duration-200 shadow-sm cursor-pointer">
                       <Heart size={14} fill="#FF7A00" className="scale-100 active:scale-90 transition-transform" />
                     </div>
                   </div>
