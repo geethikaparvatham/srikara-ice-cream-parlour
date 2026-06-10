@@ -79,7 +79,7 @@ export default function Navbar() {
         <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between relative">
           {/* Logo & Branding */}
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3 group z-50">
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full p-1 shadow-sm border border-brand-yellow/30 overflow-hidden flex-shrink-0">
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-[#0A2540] rounded-full p-1 shadow-sm border border-brand-yellow/30 overflow-hidden flex-shrink-0">
               <Image
                 src="/images/masqati_cow_logo.png"
                 alt="Masqati Logo"
@@ -88,7 +88,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className={`font-extrabold text-base sm:text-xl font-display tracking-tight leading-tight transition-colors ${shouldBeSolid ? 'text-[#0B2E59]' : 'text-white'}`}>
+              <span className={`font-extrabold text-base sm:text-xl font-display tracking-tight leading-tight transition-colors ${shouldBeSolid ? 'text-[#0B2E59] dark:text-[#FFF8EC]' : 'text-white'}`}>
                 SRIKARA
               </span>
               <span className="text-[10px] sm:text-xs text-[#FF7A00] font-semibold leading-none tracking-wider -mt-0.5 drop-shadow-sm">
@@ -105,7 +105,7 @@ export default function Navbar() {
                 href={item.href}
                 onClick={(e) => handleScrollTo(e as unknown as React.MouseEvent<HTMLAnchorElement>, item.href)}
                 className={`whitespace-nowrap px-3 py-2 text-sm font-semibold rounded-full hover:bg-[#005BFF] hover:text-white transition-all duration-200 ${
-                  shouldBeSolid ? 'text-[#0B2E59]' : 'text-white/90 hover:text-white'
+                  shouldBeSolid ? 'text-[#0B2E59] dark:text-[#FFF8EC]' : 'text-white/90 hover:text-white'
                 }`}
               >
                 {item.label}
@@ -123,12 +123,12 @@ export default function Navbar() {
                 placeholder="Search..."
                 className={`pl-10 pr-4 py-2 w-44 rounded-full border-2 focus:outline-none focus:border-[#005BFF] text-sm transition-all duration-300 ${
                   shouldBeSolid 
-                    ? 'border-[#0B2E59]/20 bg-white/50 focus:bg-white text-[#0B2E59] placeholder-[#0B2E59]/50'
-                    : 'border-white/30 bg-white/10 focus:bg-white/95 text-[#0B2E59] placeholder-white/70 focus:placeholder-[#0B2E59]/50'
+                    ? 'border-[#0B2E59]/20 bg-white/50 focus:bg-white dark:bg-[#0A2540] text-[#0B2E59] dark:text-[#FFF8EC] placeholder-[#0B2E59]/50'
+                    : 'border-white/30 bg-white/10 focus:bg-white/95 text-[#0B2E59] dark:text-[#FFF8EC] placeholder-white/70 focus:placeholder-[#0B2E59]/50'
                 }`}
               />
               <button type="submit" className="absolute left-4 top-1/2 -translate-y-1/2 focus:outline-none">
-                <Search size={16} className={`transition-colors ${shouldBeSolid ? 'text-[#0B2E59]/50 group-focus-within:text-[#005BFF]' : 'text-white/70 group-focus-within:text-[#005BFF]'}`} />
+                <Search size={16} className={`transition-colors ${shouldBeSolid ? 'text-[#0B2E59] dark:text-[#FFF8EC]/50 group-focus-within:text-[#005BFF]' : 'text-white/70 group-focus-within:text-[#005BFF]'}`} />
               </button>
             </form>
 
@@ -137,8 +137,8 @@ export default function Navbar() {
               onClick={() => setIsDark(!isDark)}
               className={`p-2 rounded-full border-2 transition-all duration-300 focus:outline-none shadow-sm ${
                 shouldBeSolid
-                  ? 'border-[#0B2E59]/20 bg-white/50 text-[#0B2E59] hover:bg-[#005BFF] hover:text-white hover:border-[#005BFF]'
-                  : 'border-white/30 bg-white/10 text-white hover:bg-white hover:text-[#005BFF] hover:border-white'
+                  ? 'border-[#0B2E59]/20 bg-white/50 text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#005BFF] hover:text-white hover:border-[#005BFF]'
+                  : 'border-white/30 bg-white/10 text-white hover:bg-white dark:bg-[#0A2540] hover:text-[#005BFF] hover:border-white'
               }`}
               aria-label="Toggle Theme"
             >
@@ -160,7 +160,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsDark(!isDark)}
               className={`p-2 rounded-full transition-colors focus:outline-none ${
-                shouldBeSolid ? 'bg-[#0B2E59]/5 text-[#0B2E59] hover:bg-[#0B2E59]/10' : 'bg-white/10 text-white hover:bg-white/20'
+                shouldBeSolid ? 'bg-[#0B2E59]/5 text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#0B2E59]/10' : 'bg-white/10 text-white hover:bg-white/20'
               }`}
               aria-label="Toggle Theme"
             >
@@ -169,7 +169,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-full transition-colors focus:outline-none ${
-                shouldBeSolid ? 'text-[#0B2E59] hover:bg-[#0B2E59]/5' : 'text-white hover:bg-white/10'
+                shouldBeSolid ? 'text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#0B2E59]/5' : 'text-white hover:bg-white/10'
               }`}
               aria-label="Toggle menu"
             >
@@ -195,7 +195,7 @@ export default function Navbar() {
                       key={item.label}
                       href={item.href}
                       onClick={(e) => handleScrollTo(e as unknown as React.MouseEvent<HTMLAnchorElement>, item.href)}
-                      className="px-4 py-3 text-base font-bold rounded-xl text-[#0B2E59] hover:bg-[#005BFF]/10 hover:text-[#005BFF] transition-all duration-200"
+                      className="px-4 py-3 text-base font-bold rounded-xl text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#005BFF]/10 hover:text-[#005BFF] transition-all duration-200"
                     >
                       {item.label}
                     </Link>
@@ -207,10 +207,10 @@ export default function Navbar() {
                         type="text"
                         name="q"
                         placeholder="Search flavours..."
-                        className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-[#0B2E59]/20 bg-[#0B2E59]/5 focus:bg-white focus:outline-none focus:border-[#005BFF] text-base text-[#0B2E59] placeholder-[#0B2E59]/50 transition-all"
+                        className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-[#0B2E59]/20 bg-[#0B2E59]/5 focus:bg-white dark:bg-[#0A2540] focus:outline-none focus:border-[#005BFF] text-base text-[#0B2E59] dark:text-[#FFF8EC] placeholder-[#0B2E59]/50 transition-all"
                       />
                       <button type="submit" className="absolute left-4 top-1/2 -translate-y-1/2 focus:outline-none">
-                        <Search size={20} className="text-[#0B2E59]/50" />
+                        <Search size={20} className="text-[#0B2E59] dark:text-[#FFF8EC]/50" />
                       </button>
                     </form>
                     

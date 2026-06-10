@@ -14,7 +14,7 @@ export default function Contact() {
           <span className="text-#005BFF font-bold text-sm uppercase tracking-widest block mb-2">
             Get in Touch
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] tracking-tight">
             Contact & Location
           </h2>
           <div className="w-16 h-1 bg-[#FF7A00] mx-auto mt-4 rounded-full" />
@@ -54,7 +54,7 @@ export default function Contact() {
           >
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl sm:text-3xl font-display font-extrabold text-[#0B2E59] mb-1">
+                <h3 className="text-2xl sm:text-3xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] mb-1">
                   Srikara Ice Cream Parlour
                 </h3>
                 <p className="text-sm text-[#005BFF] font-bold uppercase tracking-wider">
@@ -70,8 +70,8 @@ export default function Contact() {
                     <MapPin size={20} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#0B2E59] text-sm">Store Address</h4>
-                    <p className="text-xs sm:text-sm text-[#0B2E59]/80 mt-1 font-medium leading-relaxed">
+                    <h4 className="font-bold text-[#0B2E59] dark:text-[#FFF8EC] text-sm">Store Address</h4>
+                    <p className="text-xs sm:text-sm text-[#0B2E59] dark:text-[#FFF8EC]/80 mt-1 font-medium leading-relaxed">
                       Main Road, Sivalayam Veedhi, Yadagirigutta, Nalgonda, Telangana - 508115
                     </p>
                   </div>
@@ -83,8 +83,8 @@ export default function Contact() {
                     <Phone size={20} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#0B2E59] text-sm">Phone Number</h4>
-                    <p className="text-xs sm:text-sm text-[#0B2E59]/80 mt-1 font-medium">
+                    <h4 className="font-bold text-[#0B2E59] dark:text-[#FFF8EC] text-sm">Phone Number</h4>
+                    <p className="text-xs sm:text-sm text-[#0B2E59] dark:text-[#FFF8EC]/80 mt-1 font-medium">
                       +91 9030303222
                     </p>
                   </div>
@@ -96,8 +96,8 @@ export default function Contact() {
                     <Clock size={20} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#0B2E59] text-sm">Operating Hours</h4>
-                    <p className="text-xs sm:text-sm text-[#0B2E59]/80 mt-1 font-medium leading-relaxed">
+                    <h4 className="font-bold text-[#0B2E59] dark:text-[#FFF8EC] text-sm">Operating Hours</h4>
+                    <p className="text-xs sm:text-sm text-[#0B2E59] dark:text-[#FFF8EC]/80 mt-1 font-medium leading-relaxed">
                       Monday to Sunday: 10:00 AM - 10:00 PM <br />
                       <span className="text-[#184F2D] font-bold text-[10px] sm:text-xs">Open 365 Days a Year</span>
                     </p>

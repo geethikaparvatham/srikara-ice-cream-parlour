@@ -414,7 +414,7 @@ interface FlavoursProps {
 
 export default function Flavours({ categoryTitle }: FlavoursProps = {}) {
   return (
-    <section id="flavours" className="py-20 bg-[#FFF8EC] relative overflow-hidden">
+    <section id="flavours" className="py-20 bg-[#FFF8EC] dark:bg-[#041224] relative overflow-hidden">
       {/* Decorative floating graphics */}
       <div className="absolute top-40 left-10 w-24 h-24 bg-[#FF7A00]/10 rounded-full blur-xl animate-float-slow" />
       <div className="absolute bottom-40 right-10 w-32 h-32 bg-[#005BFF]/10 rounded-full blur-xl animate-float-fast" />
@@ -426,10 +426,10 @@ export default function Flavours({ categoryTitle }: FlavoursProps = {}) {
           <span className="text-[#005BFF] font-bold text-sm uppercase tracking-widest block mb-2">
             {categoryTitle ? "Category Selection" : "Gourmet Selection"}
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59]">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC]">
             {categoryTitle ? `${categoryTitle} Flavours` : "Our Signature Flavours"}
           </h2>
-          <p className="text-base text-[#0B2E59]/80 mt-4 font-medium">
+          <p className="text-base text-[#0B2E59] dark:text-[#FFF8EC]/80 mt-4 font-medium">
             Explore our curated menu of rich, creamy scoops sourced from pure milk and fresh premium ingredients.
           </p>
           <div className="w-16 h-1 bg-[#FF7A00] mx-auto mt-4 rounded-full" />
@@ -458,23 +458,23 @@ export default function Flavours({ categoryTitle }: FlavoursProps = {}) {
                 />
                 
                 {/* Floating Tag */}
-                <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold text-[#0B2E59] border border-brand-yellow shadow-sm flex items-center space-x-1">
+                <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] border border-brand-yellow shadow-sm flex items-center space-x-1">
                   <Snowflake size={10} className="text-[#005BFF] animate-spin-slow" />
                   <span>{flavor.badge}</span>
                 </div>
 
                 {/* Heart Button overlay (visual representation of popularity) */}
-                <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/80 backdrop-blur-md text-[#FF7A00] hover:bg-white transition-colors duration-200 shadow-sm cursor-pointer">
+                <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/80 backdrop-blur-md text-[#FF7A00] hover:bg-white dark:bg-[#0A2540] transition-colors duration-200 shadow-sm cursor-pointer">
                   <Heart size={14} fill="#FF7A00" className="scale-100 active:scale-90 transition-transform" />
                 </div>
               </div>
 
               {/* Card Body */}
               <div className="p-5 flex flex-col flex-grow text-left">
-                <h3 className="text-lg font-bold text-[#0B2E59] mb-2 font-display group-hover:text-[#005BFF] transition-colors leading-tight">
+                <h3 className="text-lg font-bold text-[#0B2E59] dark:text-[#FFF8EC] mb-2 font-display group-hover:text-[#005BFF] transition-colors leading-tight">
                   {flavor.name}
                 </h3>
-                <p className="text-xs sm:text-sm text-[#0B2E59]/80 leading-relaxed font-medium flex-grow">
+                <p className="text-xs sm:text-sm text-[#0B2E59] dark:text-[#FFF8EC]/80 leading-relaxed font-medium flex-grow">
                   {flavor.description}
                 </p>
               </div>
@@ -486,7 +486,7 @@ export default function Flavours({ categoryTitle }: FlavoursProps = {}) {
         </div>
 
         {/* Note Footer */}
-        <div className="text-center mt-12 bg-white/50 backdrop-blur-md inline-block mx-auto px-6 py-3 rounded-full border border-white/80 text-sm font-semibold text-[#0B2E59] shadow-sm">
+        <div className="text-center mt-12 bg-white/50 backdrop-blur-md inline-block mx-auto px-6 py-3 rounded-full border border-white/80 text-sm font-semibold text-[#0B2E59] dark:text-[#FFF8EC] shadow-sm">
           💡 Sourced directly from trusted <span className="text-[#005BFF] font-bold">Masqati Ice Cream</span> dairy suppliers. Available for scoops, sundaes, and family packs.
         </div>
 

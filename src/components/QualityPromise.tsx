@@ -41,13 +41,13 @@ export default function QualityPromise() {
               <span className="text-[#005BFF] font-bold text-sm uppercase tracking-widest block mb-2">
                 Uncompromising Standards
               </span>
-              <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] tracking-tight leading-tight">
                 Our Quality Promise
               </h2>
               <div className="w-16 h-1 bg-[#FF7A00] mt-4 rounded-full" />
             </div>
 
-            <p className="text-base sm:text-lg text-[#0B2E59]/80 leading-relaxed font-medium">
+            <p className="text-base sm:text-lg text-[#0B2E59] dark:text-[#FFF8EC]/80 leading-relaxed font-medium">
               We understand that the perfect ice cream is a delicate craft. That is why Srikara Ice Cream Parlour adheres to strict quality guidelines to guarantee that every scoop served is as clean, rich, and delicious as possible.
             </p>
 
@@ -61,8 +61,8 @@ export default function QualityPromise() {
                       <IconComponent size={20} />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-[#0B2E59] font-display">{prom.title}</h3>
-                      <p className="text-xs sm:text-sm text-[#0B2E59]/75 mt-1 font-medium">{prom.desc}</p>
+                      <h3 className="text-lg font-bold text-[#0B2E59] dark:text-[#FFF8EC] font-display">{prom.title}</h3>
+                      <p className="text-xs sm:text-sm text-[#0B2E59] dark:text-[#FFF8EC]/75 mt-1 font-medium">{prom.desc}</p>
                     </div>
                   </div>
                 );

@@ -36,7 +36,7 @@ const STORY_ITEMS = [
 
 export default function OurStory() {
   return (
-    <section id="story" className="py-24 bg-[#FFF8EC] relative overflow-hidden">
+    <section id="story" className="py-24 bg-[#FFF8EC] dark:bg-[#041224] relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/40 to-transparent" />
       
@@ -47,7 +47,7 @@ export default function OurStory() {
           <span className="text-[#005BFF] font-bold text-sm uppercase tracking-widest block mb-2">
             Our Journey
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59]">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC]">
             The Srikara Story
           </h2>
           <div className="w-16 h-1 bg-[#FF7A00] mx-auto mt-6 rounded-full" />
@@ -88,10 +88,10 @@ export default function OurStory() {
                   </span>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-bold text-[#0B2E59] mb-4 font-display leading-tight">
+                  <h3 className="text-2xl font-bold text-[#0B2E59] dark:text-[#FFF8EC] mb-4 font-display leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-[#0B2E59]/80 leading-relaxed font-medium">
+                  <p className="text-[#0B2E59] dark:text-[#FFF8EC]/80 leading-relaxed font-medium">
                     {item.description}
                   </p>
 

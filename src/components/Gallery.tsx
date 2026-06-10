@@ -50,10 +50,10 @@ export default function Gallery() {
           <span className="text-[#005BFF] font-bold text-sm uppercase tracking-widest block mb-2">
             Visual Experience
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] tracking-tight">
             Our Parlour Gallery
           </h2>
-          <p className="text-base text-[#0B2E59]/80 mt-4 font-medium">
+          <p className="text-base text-[#0B2E59] dark:text-[#FFF8EC]/80 mt-4 font-medium">
             Take a visual tour of Srikara Ice Cream Parlour—our clean setup, happy guests, and mouthwatering scoop designs.
           </p>
           <div className="w-16 h-1 bg-[#FF7A00] mx-auto mt-4 rounded-full" />

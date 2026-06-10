@@ -64,7 +64,7 @@ function SearchResults() {
                     <span>{flavor.badge}</span>
                   </div>
 
-                  <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/80 backdrop-blur-md text-#FF7A00 hover:bg-white transition-colors duration-200 shadow-sm cursor-pointer">
+                  <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/80 backdrop-blur-md text-#FF7A00 hover:bg-white dark:bg-[#0A2540] transition-colors duration-200 shadow-sm cursor-pointer">
                     <Heart size={14} fill="#FF7A00" className="scale-100 active:scale-90 transition-transform" />
                   </div>
                 </div>
@@ -89,7 +89,7 @@ function SearchResults() {
             animate={{ opacity: 1, scale: 1 }}
             className="flex flex-col items-center justify-center py-20 text-center relative z-10"
           >
-            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md mb-6 text-#0B2E59/30">
+            <div className="w-24 h-24 bg-white dark:bg-[#0A2540] rounded-full flex items-center justify-center shadow-md mb-6 text-#0B2E59/30">
               <Frown size={48} />
             </div>
             <h3 className="text-2xl font-bold text-#0B2E59 mb-3 font-display">

@@ -69,7 +69,7 @@ export default function Testimonials() {
           <span className="text-[#005BFF] font-bold text-sm uppercase tracking-widest block mb-2">
             Reviews
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] tracking-tight">
             What Our Customers Say
           </h2>
           <div className="w-16 h-1 bg-[#FF7A00] mx-auto mt-4 rounded-full" />
@@ -99,7 +99,7 @@ export default function Testimonials() {
               </div>
 
               {/* Review Text */}
-              <p className="text-base sm:text-lg text-[#0B2E59]/90 leading-relaxed font-semibold italic">
+              <p className="text-base sm:text-lg text-[#0B2E59] dark:text-[#FFF8EC]/90 leading-relaxed font-semibold italic">
                 "{REVIEWS[current].text}"
               </p>
 
@@ -109,8 +109,8 @@ export default function Testimonials() {
                   {REVIEWS[current].name.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#0B2E59] font-display text-sm">{REVIEWS[current].name}</h4>
-                  <p className="text-[10px] sm:text-xs text-[#0B2E59]/60 leading-none">{REVIEWS[current].location}</p>
+                  <h4 className="font-bold text-[#0B2E59] dark:text-[#FFF8EC] font-display text-sm">{REVIEWS[current].name}</h4>
+                  <p className="text-[10px] sm:text-xs text-[#0B2E59] dark:text-[#FFF8EC]/60 leading-none">{REVIEWS[current].location}</p>
                 </div>
               </div>
             </motion.div>
@@ -121,7 +121,7 @@ export default function Testimonials() {
         <div className="flex items-center justify-center space-x-4 mt-8">
           <button
             onClick={handlePrev}
-            className="p-2.5 rounded-full border-2 border-[#0B2E59]/20 text-[#0B2E59] hover:bg-[#005BFF] hover:border-[#005BFF] hover:text-white transition-all shadow-sm cursor-pointer"
+            className="p-2.5 rounded-full border-2 border-[#0B2E59]/20 text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#005BFF] hover:border-[#005BFF] hover:text-white transition-all shadow-sm cursor-pointer"
             aria-label="Previous Review"
           >
             <ChevronLeft size={16} />
@@ -140,7 +140,7 @@ export default function Testimonials() {
           </div>
           <button
             onClick={handleNext}
-            className="p-2.5 rounded-full border-2 border-[#0B2E59]/20 text-[#0B2E59] hover:bg-[#005BFF] hover:border-[#005BFF] hover:text-white transition-all shadow-sm cursor-pointer"
+            className="p-2.5 rounded-full border-2 border-[#0B2E59]/20 text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#005BFF] hover:border-[#005BFF] hover:text-white transition-all shadow-sm cursor-pointer"
             aria-label="Next Review"
           >
             <ChevronRight size={16} />

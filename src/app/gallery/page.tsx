@@ -9,7 +9,7 @@ export const metadata = {
 export default function GalleryPage() {
   return (
     <main className="flex-grow pt-[68px] xl:pt-[80px]">
-      <div className="min-h-screen bg-[#FFF8EC]">
+      <div className="min-h-screen bg-[#FFF8EC] dark:bg-[#041224]">
         <Gallery />
       </div>
     </main>

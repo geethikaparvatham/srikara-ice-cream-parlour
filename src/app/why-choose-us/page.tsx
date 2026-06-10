@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function WhyChooseUsPage() {
   return (
-    <main className="flex-grow pt-[68px] xl:pt-[80px] min-h-screen bg-[#FFF8EC]">
+    <main className="flex-grow pt-[68px] xl:pt-[80px] min-h-screen bg-[#FFF8EC] dark:bg-[#041224]">
       <WhyChooseUs />
     </main>
   );

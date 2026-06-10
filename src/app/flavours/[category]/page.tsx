@@ -33,13 +33,13 @@ export default async function CategoryFlavoursPage({
       case "sundaes": return <Sundaes />;
       case "kulfi": return <Kulfi />;
       case "chocolate-collection": return <ChocolateCollection />;
-      default: return <div className="text-center py-20 text-2xl font-bold text-[#0B2E59]">Category not found</div>;
+      default: return <div className="text-center py-20 text-2xl font-bold text-[#0B2E59] dark:text-[#FFF8EC]">Category not found</div>;
     }
   };
 
   return (
     <main className="flex-grow pt-[68px] xl:pt-[80px]">
-      <div className="min-h-screen bg-[#FFF8EC]">
+      <div className="min-h-screen bg-[#FFF8EC] dark:bg-[#041224]">
         {renderCategory()}
       </div>
     </main>

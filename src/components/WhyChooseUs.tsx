@@ -33,7 +33,7 @@ const VALUES = [
     icon: Award,
     title: "Trusted Masqati Brand",
     description: "Authorized seller of Masqati Ice Cream, carrying 50+ years of Hyderabad's dairy legacy.",
-    color: "text-[#0B2E59] bg-[#0B2E59]/10 border-[#0B2E59]/20",
+    color: "text-[#0B2E59] dark:text-[#FFF8EC] bg-[#0B2E59]/10 border-[#0B2E59]/20",
   },
   {
     icon: Percent,
@@ -69,10 +69,10 @@ export default function WhyChooseUs() {
           <span className="text-[#005BFF] font-bold text-sm uppercase tracking-widest block mb-2">
             Why Choose Us
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] tracking-tight">
             Our Quality Standards
           </h2>
-          <p className="text-base text-[#0B2E59]/80 mt-4 font-medium">
+          <p className="text-base text-[#0B2E59] dark:text-[#FFF8EC]/80 mt-4 font-medium">
             We combine high-end international storage tech with local dairy heritage to bring you the best scoop in town.
           </p>
           <div className="w-16 h-1 bg-[#FF7A00] mx-auto mt-4 rounded-full" />
@@ -98,10 +98,10 @@ export default function WhyChooseUs() {
                 </div>
 
                 {/* Title & Desc */}
-                <h3 className="text-lg sm:text-xl font-bold text-[#0B2E59] mb-3 font-display">
+                <h3 className="text-lg sm:text-xl font-bold text-[#0B2E59] dark:text-[#FFF8EC] mb-3 font-display">
                   {val.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-[#0B2E59]/80 leading-relaxed font-medium flex-grow">
+                <p className="text-xs sm:text-sm text-[#0B2E59] dark:text-[#FFF8EC]/80 leading-relaxed font-medium flex-grow">
                   {val.description}
                 </p>
               </motion.div>

@@ -87,7 +87,7 @@ const CHOCOLATE_CATEGORIES = [
 
 export default function ChocolateCollection() {
   return (
-    <section className="py-20 bg-[#FFF8EC] relative overflow-hidden">
+    <section className="py-20 bg-[#FFF8EC] dark:bg-[#041224] relative overflow-hidden">
       <div className="absolute top-40 left-10 w-24 h-24 bg-[#78350F]/20 rounded-full blur-xl animate-float-slow" />
       <div className="absolute bottom-40 right-10 w-32 h-32 bg-[#27272A]/20 rounded-full blur-xl animate-float-fast" />
 
@@ -137,7 +137,7 @@ export default function ChocolateCollection() {
                       <span>{flavor.badge}</span>
                     </div>
 
-                    <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/80 backdrop-blur-md text-#FF7A00 hover:bg-white transition-colors duration-200 shadow-sm cursor-pointer">
+                    <div className="absolute top-3 right-3 p-1.5 rounded-full bg-white/80 backdrop-blur-md text-#FF7A00 hover:bg-white dark:bg-[#0A2540] transition-colors duration-200 shadow-sm cursor-pointer">
                       <Heart size={14} fill="#FF7A00" className="scale-100 active:scale-90 transition-transform" />
                     </div>
                   </div>

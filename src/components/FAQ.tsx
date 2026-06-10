@@ -47,7 +47,7 @@ export default function FAQ() {
           <span className="text-[#005BFF] font-bold text-sm uppercase tracking-widest block mb-2">
             Have Questions?
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] tracking-tight">
             Frequently Asked Questions
           </h2>
           <div className="w-16 h-1 bg-[#FF7A00] mx-auto mt-4 rounded-full" />
@@ -65,7 +65,7 @@ export default function FAQ() {
                 {/* Accordion Trigger */}
                 <button
                   onClick={() => toggleFAQ(idx)}
-                  className="w-full flex items-center justify-between p-5 text-left text-[#0B2E59] hover:text-[#005BFF] transition-colors focus:outline-none"
+                  className="w-full flex items-center justify-between p-5 text-left text-[#0B2E59] dark:text-[#FFF8EC] hover:text-[#005BFF] transition-colors focus:outline-none"
                 >
                   <div className="flex items-center space-x-3 pr-4">
                     <HelpCircle size={18} className="text-[#005BFF]/80 flex-shrink-0" />
@@ -74,7 +74,7 @@ export default function FAQ() {
                   <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="text-[#0B2E59] flex-shrink-0"
+                    className="text-[#0B2E59] dark:text-[#FFF8EC] flex-shrink-0"
                   >
                     <ChevronDown size={18} />
                   </motion.div>
@@ -89,7 +89,7 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#0B2E59]/80 font-medium leading-relaxed border-t border-[#0B2E59]/5">
+                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#0B2E59] dark:text-[#FFF8EC]/80 font-medium leading-relaxed border-t border-[#0B2E59]/5">
                         {faq.a}
                       </div>
                     </motion.div>

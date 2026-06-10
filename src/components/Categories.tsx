@@ -72,7 +72,7 @@ export default function Categories() {
                 className="h-full"
               >
                 <Link href={`/flavours/${slug}`} className="block h-full group">
-                  <div className="rounded-3xl overflow-hidden glass bg-white shadow-xl hover:shadow-2xl border border-[#0B2E59]/10 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
+                  <div className="rounded-3xl overflow-hidden glass bg-white dark:bg-[#0A2540] shadow-xl hover:shadow-2xl border border-[#0B2E59]/10 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
                     
                     {/* Image */}
                     <div className="relative w-full h-[240px] shrink-0 overflow-hidden">
@@ -92,10 +92,10 @@ export default function Categories() {
 
                     {/* Text Details */}
                     <div className="p-8 text-left flex flex-col grow">
-                      <h3 className="text-2xl font-bold text-[#0B2E59] mb-3 font-display group-hover:text-[#005BFF] transition-colors leading-tight">
+                      <h3 className="text-2xl font-bold text-[#0B2E59] dark:text-[#FFF8EC] mb-3 font-display group-hover:text-[#005BFF] transition-colors leading-tight">
                         {category.title}
                       </h3>
-                      <p className="text-sm text-[#0B2E59]/70 leading-relaxed font-medium grow">
+                      <p className="text-sm text-[#0B2E59] dark:text-[#FFF8EC]/70 leading-relaxed font-medium grow">
                         {category.description}
                       </p>
                     </div>

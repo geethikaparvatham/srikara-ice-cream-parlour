@@ -28,7 +28,7 @@ export default function MobileBottomNav() {
               key={item.name}
               href={item.href}
               className={`flex flex-col items-center justify-center w-full h-full space-y-1 transition-colors ${
-                isActive ? "text-[#FF7A00]" : "text-[#0B2E59]/60 dark:text-white/60 hover:text-[#0B2E59] dark:hover:text-white"
+                isActive ? "text-[#FF7A00]" : "text-[#0B2E59] dark:text-[#FFF8EC]/60 dark:text-white/60 hover:text-[#0B2E59] dark:text-[#FFF8EC] dark:hover:text-white"
               }`}
             >
               <Icon size={20} className={isActive ? "fill-current" : ""} />
