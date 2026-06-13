@@ -59,8 +59,8 @@ function SearchResults() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   
-                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold text-#0B2E59 border border-brand-yellow shadow-sm flex items-center space-x-1">
-                    <Snowflake size={10} className="text-#005BFF animate-spin-slow" />
+                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold text-#0B2E59 border border-brand-yellow shadow-sm flex items-center space-x-1">
+                    <Snowflake size={14} className="text-#005BFF animate-spin-slow" />
                     <span>{flavor.badge}</span>
                   </div>
 
@@ -70,7 +70,7 @@ function SearchResults() {
                 </div>
 
                 <div className="p-5 flex flex-col grow text-left">
-                  <span className="text-[10px] uppercase font-bold text-#FF7A00 mb-1">{flavor.categoryName}</span>
+                  <span className="text-xs sm:text-sm uppercase font-bold text-#FF7A00 mb-1">{flavor.categoryName}</span>
                   <h3 className="text-lg font-bold text-#0B2E59 mb-2 font-display group-hover:text-#005BFF transition-colors leading-tight">
                     {flavor.name}
                   </h3>

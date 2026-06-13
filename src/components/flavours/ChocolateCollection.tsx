@@ -123,7 +123,7 @@ export default function ChocolateCollection() {
                   whileHover={{ y: -8, transition: { duration: 0.2 } }}
                   className="relative rounded-2xl overflow-hidden glass shadow-md border border-[#451A03]/10 bg-white/70 dark:bg-[#041224] dark:border-white/10 group flex flex-col h-full"
                 >
-                  <div className="relative w-full h-[180px] overflow-hidden bg-[#451A03]/5">
+                  <div className="relative w-full h-180px overflow-hidden bg-[#451A03]/5">
                     <Image
                       src={flavor.image}
                       alt={flavor.name}
@@ -132,8 +132,8 @@ export default function ChocolateCollection() {
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     
-                    <div className="absolute top-3 left-3 bg-white/90 dark:bg-[#041224] dark:border-white/10 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold text-[#451A03] border border-brand-yellow shadow-sm flex items-center space-x-1">
-                      <Snowflake size={10} className="text-[#78350F] animate-spin-slow" />
+                    <div className="absolute top-3 left-3 bg-white/90 dark:bg-[#041224] dark:border-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold text-[#451A03] border border-brand-yellow shadow-sm flex items-center space-x-1">
+                      <Snowflake size={14} className="text-[#78350F] animate-spin-slow" />
                       <span>{flavor.badge}</span>
                     </div>
 
@@ -151,7 +151,7 @@ export default function ChocolateCollection() {
                     </p>
                   </div>
 
-                  <div className={"h-1.5 w-full bg-gradient-to-r " + flavor.color} />
+                  <div className={"h-1.5 w-full bg-linear-to-r " + flavor.color} />
                 </motion.div>
               ))}
             </div>

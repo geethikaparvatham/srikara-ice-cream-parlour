@@ -511,8 +511,8 @@ export default function Cones() {
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     
-                    <div className="absolute top-3 left-3 bg-white/90 dark:bg-[#041224] dark:border-white/10 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] border border-brand-yellow shadow-sm flex items-center space-x-1">
-                      <Snowflake size={10} className="text-[#005BFF] animate-spin-slow" />
+                    <div className="absolute top-3 left-3 bg-white/90 dark:bg-[#041224] dark:border-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold text-[#0B2E59] dark:text-[#FFF8EC] border border-brand-yellow shadow-sm flex items-center space-x-1">
+                      <Snowflake size={14} className="text-[#005BFF] animate-spin-slow" />
                       <span>{flavor.badge}</span>
                     </div>
 
