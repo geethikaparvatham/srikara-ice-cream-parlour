@@ -17,7 +17,7 @@ export default function MobileBottomNav() {
   const pathname = usePathname();
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white/ dark:bg-[#0A2540]/0 dark:bg-[#081F3D]/95 backdrop-blur-md border-t border-[#0B2E59]/10 dark:border-white/10 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_-4px_20px_rgba(0,0,0,0.3)] pb-safe transition-colors duration-300">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-[#081F3D]/95 backdrop-blur-md border-t border-[#0B2E59]/10 dark:border-white/10 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_-4px_20px_rgba(0,0,0,0.3)] pb-safe transition-colors duration-300">
       <nav className="flex justify-around items-center h-16">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;

@@ -16,8 +16,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#0B2E59] text-white pt-16 pb-8 border-t-8 border-[#FFD447] relative overflow-hidden">
       {/* Decorative details */}
-      <div className="absolute top-[-50px] right-[-50px] w-48 h-48 bg-white/ dark:bg-[#0A2540]/ rounded-full blur-2xl pointer-events-none" />
-      <div className="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-white/ dark:bg-[#0A2540]/ rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute top-[-50px] right-[-50px] w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -129,7 +129,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/ dark:bg-[#0A2540]/ hover:bg-[#FF7A00] text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF7A00] text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
                 aria-label="Instagram Link"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -142,7 +142,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/ dark:bg-[#0A2540]/ hover:bg-[#005BFF] text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#005BFF] text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
                 aria-label="Facebook Link"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -153,7 +153,7 @@ export default function Footer() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/ dark:bg-[#0A2540]/ hover:bg-red-600 text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
                 aria-label="YouTube Link"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -165,7 +165,7 @@ export default function Footer() {
                 href="https://wa.me/919030303222"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/ dark:bg-[#0A2540]/ hover:bg-[#25D366] text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#25D366] text-white flex items-center justify-center border border-white/20 hover:border-transparent transition-all shadow-sm"
                 aria-label="WhatsApp Link"
               >
                 <MessageCircle size={18} />
@@ -192,7 +192,7 @@ export default function Footer() {
 
               {/* Bouncing Central Ice Cream Scoop Icon */}
               <div className="absolute inset-0 flex items-center justify-center text-[#FFD447]">
-                <div className="p-3 bg-white/ dark:bg-[#0A2540]/ rounded-full border border-white/20 shadow-md">
+                <div className="p-3 bg-white/15 rounded-full border border-white/20 shadow-md">
                   <IceCream size={26} className="animate-bounce" />
                 </div>
               </div>

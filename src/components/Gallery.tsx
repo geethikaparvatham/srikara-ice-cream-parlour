@@ -42,7 +42,7 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-b from-white dark:from-[#0A2540] to-[#FFF8EC] dark:to-[#041224] relative">
+    <section id="gallery" className="py-20 bg-gradient-to-b from-white to-[#FFF8EC] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -82,7 +82,7 @@ export default function Gallery() {
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-[#0B2E59]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="text-center text-white px-4">
-                  <div className="mx-auto w-10 h-10 rounded-full bg-white/ dark:bg-[#0A2540]/ flex items-center justify-center border border-white/40 mb-2 scale-75 group-hover:scale-100 transition-all duration-300">
+                  <div className="mx-auto w-10 h-10 rounded-full bg-white/20 flex items-center justify-center border border-white/40 mb-2 scale-75 group-hover:scale-100 transition-all duration-300">
                     <Maximize2 size={18} />
                   </div>
                   <p className="text-sm font-bold tracking-wide uppercase drop-shadow">
@@ -108,7 +108,7 @@ export default function Gallery() {
             {/* Close Button */}
             <button
               onClick={closeLightbox}
-              className="absolute top-6 right-6 p-2.5 rounded-full bg-white/ dark:bg-[#0A2540]/ hover:bg-white/ dark:bg-[#0A2540]/ text-white border border-white/20 transition-all z-50 cursor-pointer"
+              className="absolute top-6 right-6 p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all z-50 cursor-pointer"
               aria-label="Close Gallery"
             >
               <X size={24} />
@@ -117,7 +117,7 @@ export default function Gallery() {
             {/* Left controller */}
             <button
               onClick={handlePrev}
-              className="absolute left-4 sm:left-8 p-3 rounded-full bg-white/ dark:bg-[#0A2540]/ hover:bg-white/ dark:bg-[#0A2540]/ text-white border border-white/20 transition-all z-40 hidden sm:block cursor-pointer"
+              className="absolute left-4 sm:left-8 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all z-40 hidden sm:block cursor-pointer"
               aria-label="Previous Photo"
             >
               <ChevronLeft size={28} />
@@ -126,7 +126,7 @@ export default function Gallery() {
             {/* Right controller */}
             <button
               onClick={handleNext}
-              className="absolute right-4 sm:right-8 p-3 rounded-full bg-white/ dark:bg-[#0A2540]/ hover:bg-white/ dark:bg-[#0A2540]/ text-white border border-white/20 transition-all z-40 hidden sm:block cursor-pointer"
+              className="absolute right-4 sm:right-8 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all z-40 hidden sm:block cursor-pointer"
               aria-label="Next Photo"
             >
               <ChevronRight size={28} />

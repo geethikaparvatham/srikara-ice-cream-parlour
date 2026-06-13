@@ -84,7 +84,7 @@ export default function Testimonials() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="glass p-8 sm:p-12 rounded-3xl border border-[#0B2E59]/10 shadow-lg bg-white/ dark:bg-[#0A2540]/ max-w-2xl text-left relative flex flex-col space-y-4"
+              className="glass p-8 sm:p-12 rounded-3xl border border-[#0B2E59]/10 shadow-lg bg-white/70 max-w-2xl text-left relative flex flex-col space-y-4"
             >
               {/* Quote Mark */}
               <div className="absolute top-6 right-8 text-[#005BFF]/15">

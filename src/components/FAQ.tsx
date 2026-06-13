@@ -39,7 +39,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white dark:from-[#0A2540] to-[#FFF8EC] dark:to-[#041224] relative">
+    <section className="py-20 bg-gradient-to-b from-white to-[#FFF8EC] relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -60,7 +60,7 @@ export default function FAQ() {
             return (
               <div
                 key={idx}
-                className="glass rounded-2xl border border-[#0B2E59]/10 bg-white/ dark:bg-[#0A2540]/ overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="glass rounded-2xl border border-[#0B2E59]/10 bg-white/70 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 {/* Accordion Trigger */}
                 <button

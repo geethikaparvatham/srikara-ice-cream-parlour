@@ -106,8 +106,8 @@ export default function Stats() {
   return (
     <section className="relative py-16 bg-gradient-to-r from-[#0B2E59] to-[#005BFF] text-white overflow-hidden">
       {/* Decorative details */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-white/ dark:bg-[#0A2540]/ rounded-full blur-2xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/ dark:bg-[#0A2540]/ rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 text-center">
@@ -125,7 +125,7 @@ export default function Stats() {
                 }`}
               >
                 {/* Icon wrapper */}
-                <div className="w-12 h-12 rounded-full bg-white/ dark:bg-[#0A2540]/ flex items-center justify-center border border-white/20 mb-4 text-[#FFD447]">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/20 mb-4 text-[#FFD447]">
                   <IconComponent size={22} className="animate-pulse" />
                 </div>
 

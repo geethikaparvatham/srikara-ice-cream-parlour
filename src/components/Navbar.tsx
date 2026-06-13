@@ -72,7 +72,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           shouldBeSolid
-            ? "glass py-2 shadow-md border-b border-white/20 bg-white/ dark:bg-[#0A2540]/ backdrop-blur-xl"
+            ? "glass py-2 shadow-md border-b border-white/20 bg-white/95 backdrop-blur-xl"
             : "bg-transparent py-4"
         }`}
       >
@@ -123,8 +123,8 @@ export default function Navbar() {
                 placeholder="Search..."
                 className={`pl-10 pr-4 py-2 w-44 rounded-full border-2 focus:outline-none focus:border-[#005BFF] text-sm transition-all duration-300 ${
                   shouldBeSolid 
-                    ? 'border-[#0B2E59]/20 bg-white/ dark:bg-[#0A2540]/ focus:bg-white dark:bg-[#0A2540] text-[#0B2E59] dark:text-[#FFF8EC] placeholder-[#0B2E59]/50'
-                    : 'border-white/30 bg-white/ dark:bg-[#0A2540]/ focus:bg-white/ dark:bg-[#0A2540]/ text-[#0B2E59] dark:text-[#FFF8EC] placeholder-white/70 focus:placeholder-[#0B2E59]/50'
+                    ? 'border-[#0B2E59]/20 bg-white/50 focus:bg-white dark:bg-[#0A2540] text-[#0B2E59] dark:text-[#FFF8EC] placeholder-[#0B2E59]/50'
+                    : 'border-white/30 bg-white/10 focus:bg-white/95 text-[#0B2E59] dark:text-[#FFF8EC] placeholder-white/70 focus:placeholder-[#0B2E59]/50'
                 }`}
               />
               <button type="submit" className="absolute left-4 top-1/2 -translate-y-1/2 focus:outline-none">
@@ -137,8 +137,8 @@ export default function Navbar() {
               onClick={() => setIsDark(!isDark)}
               className={`p-2 rounded-full border-2 transition-all duration-300 focus:outline-none shadow-sm ${
                 shouldBeSolid
-                  ? 'border-[#0B2E59]/20 bg-white/ dark:bg-[#0A2540]/ text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#005BFF] hover:text-white hover:border-[#005BFF]'
-                  : 'border-white/30 bg-white/ dark:bg-[#0A2540]/ text-white hover:bg-white dark:bg-[#0A2540] hover:text-[#005BFF] hover:border-white'
+                  ? 'border-[#0B2E59]/20 bg-white/50 text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#005BFF] hover:text-white hover:border-[#005BFF]'
+                  : 'border-white/30 bg-white/10 text-white hover:bg-white dark:bg-[#0A2540] hover:text-[#005BFF] hover:border-white'
               }`}
               aria-label="Toggle Theme"
             >
@@ -160,7 +160,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsDark(!isDark)}
               className={`p-2 rounded-full transition-colors focus:outline-none ${
-                shouldBeSolid ? 'bg-[#0B2E59]/5 text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#0B2E59]/10' : 'bg-white/ dark:bg-[#0A2540]/ text-white hover:bg-white/ dark:bg-[#0A2540]/'
+                shouldBeSolid ? 'bg-[#0B2E59]/5 text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#0B2E59]/10' : 'bg-white/10 text-white hover:bg-white/20'
               }`}
               aria-label="Toggle Theme"
             >
@@ -169,7 +169,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-full transition-colors focus:outline-none ${
-                shouldBeSolid ? 'text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#0B2E59]/5' : 'text-white hover:bg-white/ dark:bg-[#0A2540]/'
+                shouldBeSolid ? 'text-[#0B2E59] dark:text-[#FFF8EC] hover:bg-[#0B2E59]/5' : 'text-white hover:bg-white/10'
               }`}
               aria-label="Toggle menu"
             >
@@ -186,7 +186,7 @@ export default function Navbar() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full z-40 bg-white/ dark:bg-[#0A2540]/ backdrop-blur-xl border-b border-[#0B2E59]/10 shadow-2xl xl:hidden overflow-hidden"
+              className="absolute top-full left-0 w-full z-40 bg-white/95 backdrop-blur-xl border-b border-[#0B2E59]/10 shadow-2xl xl:hidden overflow-hidden"
             >
               <div className="max-h-[calc(100vh-80px)] overflow-y-auto px-4 py-6">
                 <div className="flex flex-col space-y-2">

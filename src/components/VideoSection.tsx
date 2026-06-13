@@ -45,7 +45,7 @@ export default function VideoSection() {
           onClick={() => setIsVideoOpen(true)}
         >
           {/* Pulsing rings */}
-          <div className="absolute inset-0 rounded-full bg-white/ dark:bg-[#0A2540]/ scale-125 animate-ping" />
+          <div className="absolute inset-0 rounded-full bg-white/20 scale-125 animate-ping" />
           <div className="absolute inset-0 rounded-full bg-[#005BFF]/30 scale-150 animate-pulse" />
           
           <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white dark:bg-[#0A2540] text-[#005BFF] flex items-center justify-center shadow-2xl group-hover:scale-105 transition-transform duration-300 border-2 border-white">

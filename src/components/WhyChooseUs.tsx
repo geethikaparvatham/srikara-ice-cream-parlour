@@ -57,7 +57,7 @@ const VALUES = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-20 bg-gradient-to-b from-white dark:from-[#0A2540] to-[#FFF8EC] dark:to-[#041224] relative overflow-hidden">
+    <section id="why-choose-us" className="py-20 bg-gradient-to-b from-white to-[#FFF8EC] relative overflow-hidden">
       {/* Background blobs */}
       <div className="absolute top-10 left-[-5%] w-80 h-80 bg-[#005BFF]/5 rounded-full blur-3xl -z-10 animate-float-slow" />
       <div className="absolute bottom-10 right-[-5%] w-80 h-80 bg-[#FFD447]/10 rounded-full blur-3xl -z-10 animate-float-fast" />
@@ -90,7 +90,7 @@ export default function WhyChooseUs() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.05 }}
                 whileHover={{ y: -6, scale: 1.02 }}
-                className="relative p-6 sm:p-8 rounded-2xl glass shadow-sm hover:shadow-lg border border-[#0B2E59]/10 bg-white/ dark:bg-[#0A2540]/ flex flex-col text-left transition-all duration-300"
+                className="relative p-6 sm:p-8 rounded-2xl glass shadow-sm hover:shadow-lg border border-[#0B2E59]/10 bg-white/70 flex flex-col text-left transition-all duration-300"
               >
                 {/* Icon Wrapper */}
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center border mb-6 ${val.color}`}>
