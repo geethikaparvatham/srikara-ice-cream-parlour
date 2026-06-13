@@ -13,17 +13,12 @@ export default function Hero() {
     >
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          className="w-full h-full object-cover"
-          src="/videos/hero-video.mp4"
-          controls={false}
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          className="w-full h-full object-cover pointer-events-none transform scale-110 sm:scale-125"
+          src="https://www.kapwing.com/e/_lO00NYSDQ?autoplay=1&loop=1&muted=1&controls=0"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+        />
         {/* Overlays for readability */}
         <div className="absolute inset-0 bg-[#0B2E59]/40 mix-blend-multiply pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/60 pointer-events-none" />
