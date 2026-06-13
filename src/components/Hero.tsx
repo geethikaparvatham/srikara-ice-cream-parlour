@@ -13,11 +13,13 @@ export default function Hero() {
     >
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
-        <iframe
-          className="w-full h-full object-cover pointer-events-none transform scale-110 sm:scale-125"
-          src="https://www.kapwing.com/e/_lO00NYSDQ?autoplay=1&loop=1&muted=1&controls=0"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
+        <video
+          className="w-full h-full object-cover"
+          src="/videos/icecream.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
         />
         {/* Overlays for readability */}
         <div className="absolute inset-0 bg-[#0B2E59]/40 mix-blend-multiply pointer-events-none" />
@@ -41,7 +43,7 @@ export default function Hero() {
           className="max-w-4xl flex flex-col items-center"
         >
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-extrabold text-white mb-4 sm:mb-6 leading-[1.1] drop-shadow-lg tracking-tight">
-            Srikara Ice Cream <span className="text-[#FFD447] block sm:inline">Parlour</span>
+            Welcome to Ice Cream World
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl font-bold text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 drop-shadow-md leading-relaxed">
@@ -54,7 +56,7 @@ export default function Hero() {
           >
             <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer" />
             <span className="relative z-10 text-lg sm:text-xl tracking-wide">
-              Explore Flavours
+              Shop Now
             </span>
           </Link>
         </motion.div>
