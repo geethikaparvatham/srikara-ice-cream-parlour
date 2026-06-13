@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative w-full h-[95vh] min-h-[550px] bg-black overflow-hidden select-none"
+      className="relative w-full h-[95vh] min-h-[550px] bg-white dark:bg-[#0A2540] overflow-hidden select-none"
     >
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
@@ -22,8 +22,8 @@ export default function Hero() {
           playsInline
         />
         {/* Overlays for readability */}
-        <div className="absolute inset-0 bg-[#0B2E59]/40 mix-blend-multiply pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/60 pointer-events-none" />
+        <div className="absolute inset-0 bg-white/60 dark:bg-[#0B2E59]/40 mix-blend-overlay dark:mix-blend-multiply pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-white/80 dark:from-[#0A2540]/90 dark:via-[#0A2540]/40 dark:to-[#0A2540]/80 pointer-events-none" />
       </div>
 
       {/* Floating Sparkles */}
@@ -42,11 +42,11 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl flex flex-col items-center"
         >
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-extrabold text-white mb-4 sm:mb-6 leading-[1.1] drop-shadow-lg tracking-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-extrabold text-[#0B2E59] dark:text-white mb-4 sm:mb-6 leading-[1.1] drop-shadow-lg tracking-tight transition-colors duration-300">
             Welcome to Ice Cream World
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 drop-shadow-md leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-[#0B2E59]/90 dark:text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 drop-shadow-md leading-relaxed transition-colors duration-300">
             Premium Masqati Ice Cream Experience
           </p>
 
@@ -69,8 +69,8 @@ export default function Hero() {
         transition={{ delay: 1, duration: 1 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10 pointer-events-none"
       >
-        <span className="text-white/70 text-xs font-semibold tracking-widest uppercase mb-2">Scroll to explore</span>
-        <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center p-1">
+        <span className="text-[#0B2E59]/70 dark:text-white/70 text-xs font-semibold tracking-widest uppercase mb-2 transition-colors duration-300">Scroll to explore</span>
+        <div className="w-6 h-10 border-2 border-[#0B2E59]/40 dark:border-white/40 rounded-full flex justify-center p-1 transition-colors duration-300">
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
