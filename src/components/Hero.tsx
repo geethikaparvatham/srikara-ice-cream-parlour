@@ -50,7 +50,7 @@ export default function Hero() {
           className="max-w-4xl flex flex-col items-center"
         >
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-extrabold text-white mb-4 sm:mb-6 leading-[1.1] drop-shadow-lg tracking-tight transition-colors duration-300">
-            Welcome to Ice Cream World
+            Welcome to Srikara Ice Cream Parlour
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl font-bold text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 drop-shadow-md leading-relaxed transition-colors duration-300">
