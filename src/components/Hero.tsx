@@ -13,11 +13,13 @@ export default function Hero() {
     >
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
-        <iframe
-          className="w-full h-full object-cover pointer-events-none transform scale-110 sm:scale-125"
-          src="https://www.kapwing.com/e/_lO00NYSDQ?autoplay=1&loop=1&muted=1&controls=0"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
+        <video
+          className="w-full h-full object-cover"
+          src="https://v.ftcdn.net/06/16/02/78/700_F_616027864_wUDUFPwOFhHamoEyND7jHzTrco23WCoB_NW.mp4?token=1781624787_tKfMSrVDyy5zzlrL9VhEMoHi9wFSv8Ad_FWxn7lrT5E"
+          autoPlay
+          muted
+          loop
+          playsInline
         />
         {/* Overlays for readability */}
         <div className="absolute inset-0 bg-[#0B2E59]/40 mix-blend-multiply pointer-events-none" />
