@@ -1,0 +1,12 @@
+const fs = require('fs');
+let content = fs.readFileSync('src/components/Footer.tsx', 'utf8');
+content = content.replace(/(bg|text|border|hover:bg|hover:text|from|to|via)-#([0-9A-Fa-f]+)/g, '$1-[#$2]');
+content = content.replace(/top--50px/g, '-top-[50px]');
+content = content.replace(/bottom--50px/g, '-bottom-[50px]');
+content = content.replace(/right--50px/g, '-right-[50px]');
+content = content.replace(/left--50px/g, '-left-[50px]');
+content = content.replace(/w-18px/g, 'w-[18px]');
+content = content.replace(/h-18px/g, 'h-[18px]');
+content = content.replace(/max-w-200px/g, 'max-w-[200px]');
+fs.writeFileSync('src/components/Footer.tsx', content, 'utf8');
+console.log('Fixed Footer.tsx');
