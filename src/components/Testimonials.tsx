@@ -58,7 +58,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-b from-[#FFF8EC] to-white relative overflow-hidden">
+    <section id="testimonials" className="py-20 bg-gradient-to-b from-[#FFF8EC] dark:from-[#041224] to-white dark:to-[#0A2540] relative overflow-hidden">
       {/* Decorative details */}
       <div className="absolute top-20 left-[-5%] w-72 h-72 bg-[#005BFF]/5 rounded-full blur-3xl -z-10 animate-float-slow" />
       

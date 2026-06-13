@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .dark body, 
 .dark .bg-\[\#FFF8EC\] {
   background-color: #0B1120 !important;
-  color: #F8FAFC !important;
+  
 }
 
 .dark .text-\[\#0B2E59\] {
@@ -101,9 +101,8 @@ h1, h2, h3, h4, h5, h6 {
 .dark .bg-white\/50,
 .dark .bg-white\/80,
 .dark .bg-white\/95 {
-  background-color: rgba(30, 41, 59, 0.7) !important;
+  background-color: rgba(10, 37, 64, 0.8) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
-  color: #F8FAFC !important;
 }
 
 .dark .bg-white {
