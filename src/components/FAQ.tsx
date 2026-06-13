@@ -39,7 +39,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white dark:from-[#0A2540] to-[#FFF8EC] dark:to-[#041224] relative">
+    <section className="py-20 bg-gradient-to-b from-white dark:from-[#0A2540] to-white dark:to-[#041224] relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -58,10 +58,10 @@ export default function FAQ() {
           {FAQS.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (
-              <div
-                key={idx}
-                className="glass rounded-2xl border border-[#0B2E59]/10 bg-white/70 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
+                <div
+                  key={idx}
+                  className="rounded-2xl border border-[#0B2E59]/10 dark:border-white/10 bg-[#F8FAFC] dark:bg-[#041224] overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
                 {/* Accordion Trigger */}
                 <button
                   onClick={() => toggleFAQ(idx)}
@@ -69,12 +69,12 @@ export default function FAQ() {
                 >
                   <div className="flex items-center space-x-3 pr-4">
                     <HelpCircle size={18} className="text-[#005BFF]/80 dark:!text-[#FFD447] flex-shrink-0" />
-                    <span className="font-bold text-sm sm:text-base leading-snug text-[#0B2E59] dark:!text-[#0B2E59]">{faq.q}</span>
+                    <span className="font-bold text-sm sm:text-base leading-snug text-[#0B2E59] dark:text-white">{faq.q}</span>
                   </div>
                   <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="text-[#0B2E59] dark:text-[#FFF8EC] flex-shrink-0"
+                    className="text-[#0B2E59] dark:text-white flex-shrink-0"
                   >
                     <ChevronDown size={18} />
                   </motion.div>
@@ -89,7 +89,7 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#0B2E59] dark:!text-[#0B2E59] font-medium leading-relaxed border-t border-[#0B2E59]/5 dark:border-[#0B2E59]/20">
+                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#0B2E59] dark:text-white font-medium leading-relaxed border-t border-[#0B2E59]/5 dark:border-[#0B2E59]/20">
                         {faq.a}
                       </div>
                     </motion.div>

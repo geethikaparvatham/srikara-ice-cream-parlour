@@ -10,7 +10,7 @@ export default function FlavoursPage() {
   return (
     <main className="flex-grow pt-[68px] xl:pt-[80px]">
       {/* Show only Categories on this page as requested */}
-      <div className="min-h-screen bg-[#FFF8EC] dark:bg-[#041224]">
+      <div className="min-h-screen bg-white dark:bg-[#041224]">
         <Categories />
       </div>
     </main>

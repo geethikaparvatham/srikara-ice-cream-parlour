@@ -36,7 +36,7 @@ const STORY_ITEMS = [
 
 export default function OurStory() {
   return (
-    <section id="story" className="py-24 bg-[#FFF8EC] dark:bg-[#041224] relative overflow-hidden">
+    <section id="story" className="py-24 bg-white dark:bg-[#041224] relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/40 to-transparent" />
       

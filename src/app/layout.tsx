@@ -79,7 +79,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col bg-[#FFF8EC] dark:bg-[#041224] text-[#0B2E59] dark:text-[#FFF8EC] dark:bg-[#041224] dark:text-[#FFF8EC] pb-[64px] md:pb-0">
+      <body className="min-h-full flex flex-col bg-white dark:bg-[#0A2540] text-[#0B2E59] dark:text-[#FFF8EC] dark:bg-[#0A2540] dark:text-[#FFF8EC] pb-[64px] md:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

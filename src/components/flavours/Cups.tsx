@@ -391,7 +391,7 @@ const CUP_CATEGORIES = [
 
 export default function Cups() {
   return (
-    <section className="py-20 bg-[#FFF8EC] dark:bg-[#041224] relative overflow-hidden">
+    <section className="py-20 bg-white dark:bg-[#041224] relative overflow-hidden">
       <div className="absolute top-40 left-10 w-24 h-24 bg-[#FF7A00]/10 rounded-full blur-xl animate-float-slow" />
       <div className="absolute bottom-40 right-10 w-32 h-32 bg-[#005BFF]/10 rounded-full blur-xl animate-float-fast" />
 

@@ -25,7 +25,7 @@ const PROMISES = [
 
 export default function QualityPromise() {
   return (
-    <section className="py-20 bg-gradient-to-b from-[#FFF8EC] dark:from-[#041224] to-white dark:to-[#0A2540] relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-white dark:from-[#041224] to-white dark:to-[#0A2540] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           

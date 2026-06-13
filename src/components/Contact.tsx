@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-linear-to-b from-white dark:from-[#0A2540] to-[#FFF8EC] dark:to-[#041224] relative">
+    <section id="contact" className="py-20 bg-linear-to-b from-white dark:from-[#0A2540] to-white dark:to-[#041224] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

@@ -57,7 +57,7 @@ const VALUES = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-20 bg-gradient-to-b from-white dark:from-[#0A2540] to-[#FFF8EC] dark:to-[#041224] relative overflow-hidden">
+    <section id="why-choose-us" className="py-20 bg-gradient-to-b from-white dark:from-[#0A2540] to-white dark:to-[#041224] relative overflow-hidden">
       {/* Background blobs */}
       <div className="absolute top-10 left-[-5%] w-80 h-80 bg-[#005BFF]/5 rounded-full blur-3xl -z-10 animate-float-slow" />
       <div className="absolute bottom-10 right-[-5%] w-80 h-80 bg-[#FFD447]/10 rounded-full blur-3xl -z-10 animate-float-fast" />

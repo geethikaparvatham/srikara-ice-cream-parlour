@@ -58,7 +58,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-b from-[#FFF8EC] dark:from-[#041224] to-white dark:to-[#0A2540] relative overflow-hidden">
+    <section id="testimonials" className="py-20 bg-gradient-to-b from-white dark:from-[#041224] to-white dark:to-[#0A2540] relative overflow-hidden">
       {/* Decorative details */}
       <div className="absolute top-20 left-[-5%] w-72 h-72 bg-[#005BFF]/5 rounded-full blur-3xl -z-10 animate-float-slow" />
       
@@ -84,7 +84,7 @@ export default function Testimonials() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="glass p-8 sm:p-12 rounded-3xl border border-[#0B2E59]/10 shadow-lg bg-white/70 max-w-2xl text-left relative flex flex-col space-y-4"
+              className="glass p-8 sm:p-12 rounded-3xl border border-[#0B2E59]/10 shadow-lg bg-white/70 dark:bg-[#041224] dark:border-white/10 max-w-2xl text-left relative flex flex-col space-y-4"
             >
               {/* Quote Mark */}
               <div className="absolute top-6 right-8 text-[#005BFF]/15">

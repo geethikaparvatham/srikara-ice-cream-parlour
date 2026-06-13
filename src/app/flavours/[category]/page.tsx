@@ -39,7 +39,7 @@ export default async function CategoryFlavoursPage({
 
   return (
     <main className="flex-grow pt-[68px] xl:pt-[80px]">
-      <div className="min-h-screen bg-[#FFF8EC] dark:bg-[#041224]">
+      <div className="min-h-screen bg-white dark:bg-[#041224]">
         {renderCategory()}
       </div>
     </main>

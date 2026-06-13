@@ -16,7 +16,7 @@ const BADGES = [
 
 export default function Welcome() {
   return (
-    <section id="about" className="py-20 bg-[#FFF8EC] dark:bg-[#041224] relative overflow-hidden">
+    <section id="about" className="py-20 bg-white dark:bg-[#041224] relative overflow-hidden">
       {/* Decorative details */}
       <div className="absolute top-20 right-[-10%] w-72 h-72 bg-[#FFD447]/20 rounded-full blur-3xl -z-10 animate-float-slow" />
       <div className="absolute bottom-10 left-[-10%] w-96 h-96 bg-[#005BFF]/10 rounded-full blur-3xl -z-10 animate-float-fast" />
@@ -49,7 +49,7 @@ export default function Welcome() {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="absolute -bottom-6 -right-4 sm:right-6 bg-white dark:bg-[#0A2540] py-4 px-6 rounded-2xl shadow-xl border border-brand-yellow flex items-center space-x-3"
             >
-              <div className="relative w-10 h-10 bg-[#FFF8EC] dark:bg-[#041224] rounded-full p-1 border border-brand-yellow/30">
+              <div className="relative w-10 h-10 bg-white dark:bg-[#041224] rounded-full p-1 border border-brand-yellow/30">
                 <Image
                   src="/images/masqati_logo.png"
                   alt="Masqati Logo"
