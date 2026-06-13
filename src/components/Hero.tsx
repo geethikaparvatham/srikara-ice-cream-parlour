@@ -1,11 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2.0;
+    }
+  }, []);
+
   return (
     <section
       id="home"
@@ -14,6 +22,7 @@ export default function Hero() {
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
         <video
+          ref={videoRef}
           className="w-full h-full object-cover"
           src="https://v.ftcdn.net/06/16/02/78/700_F_616027864_wUDUFPwOFhHamoEyND7jHzTrco23WCoB_NW.mp4?token=1781624787_tKfMSrVDyy5zzlrL9VhEMoHi9wFSv8Ad_FWxn7lrT5E"
           autoPlay
