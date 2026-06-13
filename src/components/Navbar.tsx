@@ -72,7 +72,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           shouldBeSolid
-            ? "glass py-2 shadow-md border-b border-white/20 bg-white/95 backdrop-blur-xl"
+            ? "glass py-2 shadow-md border-b border-[#0B2E59]/10 dark:border-white/20 bg-white/95 dark:bg-[#0A2540]/95 backdrop-blur-xl"
             : "bg-transparent py-4"
         }`}
       >

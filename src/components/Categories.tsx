@@ -85,7 +85,7 @@ export default function Categories() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       
-                      <div className="absolute bottom-4 right-4 p-2.5 rounded-full bg-white/90 backdrop-blur-md text-[#005BFF] shadow-lg group-hover:bg-[#FF7A00] group-hover:text-white transition-colors duration-300">
+                      <div className="absolute bottom-4 right-4 p-2.5 rounded-full bg-white/90 dark:bg-[#041224] dark:border-white/10 backdrop-blur-md text-[#005BFF] shadow-lg group-hover:bg-[#FF7A00] group-hover:text-white transition-colors duration-300">
                         <Sparkles size={16} />
                       </div>
                     </div>
