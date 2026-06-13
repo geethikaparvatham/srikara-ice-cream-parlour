@@ -24,7 +24,7 @@ function SearchResults() {
   });
 
   return (
-    <section className="py-20 bg-#FFF8EC relative min-h-screen overflow-hidden mt-16">
+    <section className="py-20 bg-white relative min-h-screen overflow-hidden mt-16">
       <div className="absolute top-40 left-10 w-24 h-24 bg-#FF7A00/10 rounded-full blur-xl animate-float-slow" />
       <div className="absolute bottom-40 right-10 w-32 h-32 bg-#005BFF/10 rounded-full blur-xl animate-float-fast" />
 

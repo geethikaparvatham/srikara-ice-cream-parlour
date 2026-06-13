@@ -157,12 +157,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #FFF8EC;
+  background: #FFFFFF;
 }
 ::-webkit-scrollbar-thumb {
   background: #005BFF;
   border-radius: 9999px;
-  border: 2px solid #FFF8EC;
+  border: 2px solid #FFFFFF;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #0B2E59;
