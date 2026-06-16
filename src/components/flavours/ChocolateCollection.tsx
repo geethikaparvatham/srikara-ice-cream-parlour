@@ -123,7 +123,7 @@ export default function ChocolateCollection() {
                   whileHover={{ y: -8, transition: { duration: 0.2 } }}
                   className="relative rounded-2xl overflow-hidden glass shadow-md border border-[#451A03]/10 bg-white/70 dark:bg-[#041224] dark:border-white/10 group flex flex-col h-full"
                 >
-                  <div className="relative w-full h-180px overflow-hidden bg-[#451A03]/5">
+                  <div className="relative w-full h-[180px] overflow-hidden bg-[#451A03]/5">
                     <Image
                       src={flavor.image}
                       alt={flavor.name}
