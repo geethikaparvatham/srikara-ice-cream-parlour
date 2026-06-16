@@ -93,13 +93,13 @@ export default function ChocolateCollection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-[#78350F] font-bold text-sm uppercase tracking-widest block mb-2">
+          <span className="text-[#78350F] dark:text-[#FFF8EC]/90 font-bold text-sm uppercase tracking-widest block mb-2">
             The Ultimate Indulgence
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#451A03]">
+          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-[#451A03] dark:text-[#FFF8EC]">
             Chocolate Collection
           </h2>
-          <p className="text-base text-[#451A03]/80 mt-4 font-medium">
+          <p className="text-base text-[#451A03]/80 dark:text-[#FFF8EC]/80 mt-4 font-medium">
             Dive into our decadent world of rich, premium cocoa featuring dark chocolate, loaded brownies, and nutty clusters.
           </p>
           <div className="w-16 h-1 bg-[#78350F] mx-auto mt-4 rounded-full" />
@@ -109,7 +109,7 @@ export default function ChocolateCollection() {
           <div key={categoryGroup.title} className="mb-20 last:mb-0">
             <div className="flex items-center space-x-3 mb-8">
               <span className="text-3xl">{categoryGroup.icon}</span>
-              <h3 className="text-2xl sm:text-3xl font-display font-bold text-[#451A03]">{categoryGroup.title}</h3>
+              <h3 className="text-2xl sm:text-3xl font-display font-bold text-[#451A03] dark:text-[#FFF8EC]">{categoryGroup.title}</h3>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -132,8 +132,8 @@ export default function ChocolateCollection() {
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     
-                    <div className="absolute top-3 left-3 bg-white/90 dark:bg-[#041224] dark:border-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold text-[#451A03] border border-brand-yellow shadow-sm flex items-center space-x-1">
-                      <Snowflake size={14} className="text-[#78350F] animate-spin-slow" />
+                    <div className="absolute top-3 left-3 bg-white/90 dark:bg-[#041224] dark:border-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold text-[#451A03] dark:text-[#FFF8EC] border border-brand-yellow shadow-sm flex items-center space-x-1">
+                      <Snowflake size={14} className="text-[#78350F] dark:text-[#FFF8EC] animate-spin-slow" />
                       <span>{flavor.badge}</span>
                     </div>
 
@@ -143,10 +143,10 @@ export default function ChocolateCollection() {
                   </div>
 
                   <div className="p-5 flex flex-col grow text-left">
-                    <h3 className="text-lg font-bold text-[#451A03] mb-2 font-display group-hover:text-[#78350F] transition-colors leading-tight">
+                    <h3 className="text-lg font-bold text-[#451A03] dark:text-[#FFF8EC] mb-2 font-display group-hover:text-[#78350F] dark:group-hover:text-[#F5EAD4] transition-colors leading-tight">
                       {flavor.name}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[#451A03]/80 leading-relaxed font-medium grow">
+                    <p className="text-xs sm:text-sm text-[#451A03]/80 dark:text-[#FFF8EC]/80 leading-relaxed font-medium grow">
                       {flavor.description}
                     </p>
                   </div>
